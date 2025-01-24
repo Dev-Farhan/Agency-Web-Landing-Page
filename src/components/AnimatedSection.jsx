@@ -50,7 +50,7 @@ const SectionWithLine = ({
     >
       {/* Text Content */}
       <motion.div
-        className={`w-1/2 tracking-widest lg:flex lg:flex-col lg:gap-6 ${
+        className={`w-11/12 md:w-1/2 tracking-widest lg:flex lg:flex-col lg:gap-6 ${
           reverse ? "" : "lg:ml-24"
         }`}
         whileInView={{ opacity: 1, x: 0 }}

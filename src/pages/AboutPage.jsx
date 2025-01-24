@@ -131,7 +131,7 @@ const AboutPage = () => {
           {/* <!-- Card 1 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/webLog.png"
+              src="/icons/webLog.png"
               alt="web"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -141,7 +141,7 @@ const AboutPage = () => {
           {/* <!-- Card 2 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/seoLog.png"
+              src="/icons/seoLog.png"
               alt="seo"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -151,7 +151,7 @@ const AboutPage = () => {
           {/* <!-- Card 3 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/mobLog.png"
+              src="/icons/mobLog.png"
               alt="mobile"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -161,7 +161,7 @@ const AboutPage = () => {
           {/* <!-- Card 4 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/arLog.png"
+              src="/icons/arLog.png"
               alt="arvr"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
