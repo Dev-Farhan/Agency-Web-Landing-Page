@@ -9,13 +9,34 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SubscribeBox from "./components/SubscribeBox";
 import ScrollToTop from "./components/ScrollToTop";
+import { useEffect, useState } from "react";
 
 function App() {
   const location = useLocation();
+  const [darkMode, setDarkMode] = useState(false);
+
+   // Check if there's a saved theme in localStorage
+   useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+    if (storedTheme === 'dark') {
+      setDarkMode(true);
+    }
+  }, []);
+
+  // Apply dark mode class to the <html> tag and save preference to localStorage
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [darkMode]);
   return (
-    <div className="AppWrapper">
+    <div className="AppWrapper dark:bg-primary-dark">
       <ScrollToTop />
-      <Navbar />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

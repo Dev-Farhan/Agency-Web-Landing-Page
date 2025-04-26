@@ -41,10 +41,10 @@ const AboutPage = () => {
             className="flex flex-col gap-6 md:w-1/2 md:ml-10 lg:w-1/3 "
           >
             <h6 className="text-primary">About Us</h6>
-            <h1 className="text-2xl font-semibold lg:max-w-sm tracking-wider leading-relaxed">
+            <h1 className="text-2xl font-semibold lg:max-w-sm tracking-wider leading-relaxed dark:text-primary-light">
               Lorem Ipsum is simply dummy text of the printing.{" "}
             </h1>
-            <p className="text-sm text-[#868686] lg:max-w-sm leading-normal">
+            <p className="text-sm text-[#868686] lg:max-w-sm leading-normal dark:text-primary-gray">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's
             </p>
@@ -84,7 +84,7 @@ const AboutPage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="text-sm text-[#585858] lg:max-w-5xl lg:text-lg lg:tracking-wider"
+          className="text-sm text-[#585858] lg:max-w-5xl lg:text-lg lg:tracking-wider dark:text-primary-gray"
         >
           KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
           applications and website builders measuring dozens of completed
@@ -103,11 +103,11 @@ const AboutPage = () => {
           className="md:w-1/2"
         >
           <div className="px-3">
-            <p className="h-1 w-12 bg-black my-3"></p>
-            <h1 className="text-lg font-semibold py-5">
+            <p className="h-1 w-12 bg-black dark:bg-primary-light my-3"></p>
+            <h1 className="text-lg font-semibold py-5 dark:text-primary-light">
               Lorem Ipsum is simply dummy text of the printing.
             </h1>
-            <p className="text-gray-600 text-sm mb-5">
+            <p className="text-gray-600 text-sm mb-5 dark:text-primary-gray">
               KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
               applications and website builders measuring dozens of completed
               projects.

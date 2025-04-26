@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router";
+import ThemeToggleButton from "./ThemeToggleButton";
 
-const Navbar = () => {
+const Navbar = ({darkMode ,setDarkMode}) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -15,20 +16,35 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container flex items-center justify-between px-6 py-4 md:py-7">
+    <div className="sticky top-0 z-50 bg-white shadow-md dark:bg-primary-dark">
+      <div className="container flex items-center justify-between md:justify-between px-6 py-4 md:py-7">
         <div className="font-bold text-[#1090CB] uppercase">
           <a href="/" className="md:text-xl">
             Logo
           </a>
         </div>
-        <div className="text-bold lg:hidden">
+      
+        {/* <div className="text-bold lg:hidden">
           <GiHamburgerMenu color="#1090CB" onClick={() => setIsOpen(true)} />
-        </div>
+        </div> */}
+        <div className="flex items-center gap-4">
+  <div className="lg:hidden">
+    <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode} />
+  </div>
+
+  <div className="lg:hidden">
+    <GiHamburgerMenu
+      color="#1090CB"
+      onClick={() => setIsOpen(true)}
+      size={24}
+    />
+  </div>
+</div>
+
 
         {/* Mobile Navigation */}
         <div
-          className={`fixed inset-0 bg-blue-800 transform ${
+          className={`fixed inset-0 min-h-screen bg-blue-800 transform ${
             isOpen ? "translate-x-0" : "translate-x-full"
           } transition-transform duration-300 ease-in-out flex flex-col items-center justify-center z-50 text-white`}
         >
@@ -64,7 +80,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex">
-          <ul className="flex items-center gap-20">
+          <ul className="flex items-center gap-20 dark:text-white">
             {navItems.map((item) => (
               <li
                 key={item.path}
@@ -76,7 +92,7 @@ const Navbar = () => {
                 {location.pathname === item.path && (
                   <span className="absolute -left-3 top-1/5 transform -translate-y-1/2 w-2 h-2 bg-green-500 rounded-full"></span>
                 )}
-                <NavLink to={item.path}>{item.name}</NavLink>
+                <NavLink className="" to={item.path}>{item.name}</NavLink>
               </li>
             ))}
             <button className="bg-[#1090CB] text-white px-4 py-2 rounded-lg">
@@ -84,6 +100,12 @@ const Navbar = () => {
             </button>
           </ul>
         </div>
+
+           {/* Dark Mode Toggle Button */}
+           <div  className='hidden'>
+
+      <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode}/>
+           </div>
       </div>
     </div>
   );

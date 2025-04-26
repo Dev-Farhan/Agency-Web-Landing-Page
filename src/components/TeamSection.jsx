@@ -39,9 +39,9 @@ const teamMembers = [
 
 export const TeamSection = () => {
   return (
-    <div className="bg-white py-12">
+    <div className="py-12">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-start px-4 mb-8">Our Team</h2>
+        <h2 className="text-3xl font-bold text-start px-4 mb-8 dark:text-primary-light">Our Team</h2>
         <Slider {...sliderSettings}>
           {teamMembers.map((member, index) => (
             <div key={index} className="p-4">
@@ -51,8 +51,8 @@ export const TeamSection = () => {
                   alt={member.name}
                   className="h-[281px] w-full mb-4"
                 />
-                <p className="text-gray-500">{member.role}</p>
-                <h3 className="font-medium">{member.name}</h3>
+                <p className="text-gray-500 dark:text-primary-light">{member.role}</p>
+                <h3 className="font-medium dark:text-primary-gray">{member.name}</h3>
               </div>
             </div>
           ))}

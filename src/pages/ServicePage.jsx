@@ -93,7 +93,7 @@ const ServicePage = () => {
   };
   return (
     <div>
-      <div className="bg-[#1090cb3b] flex flex-col items-center justify-start gap-4 ">
+      <div className="bg-[#1090cb3b] dark:bg-primary-dark flex flex-col items-center justify-start gap-4 ">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
@@ -105,10 +105,10 @@ const ServicePage = () => {
             alt="Services"
             className="bg-white p-2 rounded-full mt-20"
           />
-          <h1 className="text-3xl font-semibold">
+          <h1 className="text-3xl font-semibold dark:text-primary-light">
             Our <span className="text-primary">Services</span>
           </h1>
-          <p className="max-w-sm text-center text-[#696969] px-2">
+          <p className="max-w-sm text-center text-[#696969] dark:text-primary-gray px-2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's
           </p>
@@ -147,12 +147,12 @@ const ServicePage = () => {
           transition={{ duration: 1 }}
           className="px-2 md:w-1/2 md:ml-8 lg:ml-32"
         >
-          <h1 className="text-xl font-semibold tracking-wider my-3 lg:text-3xl">
+          <h1 className="text-xl font-semibold tracking-wider my-3 lg:text-3xl dark:text-primary-light">
             <span className="text-primary">Lorem Ipsum</span> is simply dummy
             <br />
             text of the printing.{" "}
           </h1>
-          <p className="text-sm text-[#545454] my-3 lg:max-w-lg lg:text-md lg:mb-5 leading-relaxed">
+          <p className="text-sm text-[#545454] dark:text-primary-gray my-3 lg:max-w-lg lg:text-md lg:mb-5 leading-relaxed">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
             applications and website builders measuring dozens of completed
             projects. We build and develop mobile applications for several top
@@ -190,14 +190,14 @@ const ServicePage = () => {
         transition={{ duration: 1 }}
         className="py-10 px-10"
       >
-        <h2 className="text-3xl font-normal text-start mb-8">
+        <h2 className="text-3xl font-normal text-start mb-8 dark:text-primary-light">
           Our Latest Projects
         </h2>
         <Slider {...settings}>
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg px-3 flex flex-col items-center justify-center"
+              className="rounded-lg px-3 flex flex-col items-center justify-center"
             >
               <div className="flex items-center justify-center w-full h-48">
                 <img
@@ -207,10 +207,10 @@ const ServicePage = () => {
                 />
               </div>
               <div className="p-4  flex flex-col items-center justify-center w-full ">
-                <h3 className="text-md font-semibold mb-2 max-w-56">
+                <h3 className="text-md font-semibold mb-2 max-w-56 dark:text-primary-light">
                   {project.title}
                 </h3>
-                <p className="text-sm text-gray-600 max-w-56">
+                <p className="text-sm text-gray-600 max-w-56 dark:text-primary-gray">
                   {project.description}
                 </p>
               </div>

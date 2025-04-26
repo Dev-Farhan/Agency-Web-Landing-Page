@@ -11,8 +11,9 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#1090CB", // Primary color
-          light: "#34befe", // Lighter shade
-          dark: "#0c5f8a", // Darker shade
+          light: "#ffffff", // Lighter shade
+          dark: "#1E1E1E", // Darker shade
+          gray:"#94a3b8"
         },
       },
     },

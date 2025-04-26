@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 
 const Card = ({ image, title, text, name, date }) => {
   return (
-    <div className="bg-white  rounded-lg p-6 max-w-xs">
+    <div className="bg-white rounded-lg p-6 max-w-xs">
       <motion.img
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
@@ -89,7 +89,7 @@ const BlogPage = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="text-2xl font-semibold text-center leading-relaxed tracking-wider md:text-4xl md:font-bold md:tracking-wider md:leading-relaxed"
+          className="text-2xl font-semibold text-center leading-relaxed tracking-wider md:text-4xl md:font-bold md:tracking-wider md:leading-relaxed dark:text-primary-light"
         >
           Latest news <br /> <span className="text-primary ">Updates</span>
         </motion.h1>
@@ -135,7 +135,7 @@ const BlogPage = () => {
           transition={{ duration: 1 }}
           className="px-3 md:w1/2 mt-8"
         >
-          <h1 className="text-lg font-semibold leading-relaxed my-3 lg:max-w-md lg:text-xl lg:tracking-wider">
+          <h1 className="text-lg font-semibold leading-relaxed my-3 lg:max-w-md lg:text-xl lg:tracking-wider dark:text-primary-light">
             Lorem Ipsum is simply dummy text of the printing.
           </h1>
           <p className="text-[#727272] text-sm leading-relaxed lg:max-w-md lg:tracking-wider lg:leading-relaxed lg:my-10">
@@ -151,7 +151,7 @@ const BlogPage = () => {
                 className="h-12 w-12 rounded-full"
               />
               <div className="flex flex-col items-center text-sm px-2">
-                <p className="font-medium">Name Here</p>
+                <p className="font-medium dark:text-primary-light">Name Here</p>
                 <p className="text-[#7B7B7B]">20.12.2025</p>
               </div>
             </div>
@@ -164,7 +164,7 @@ const BlogPage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1 }}
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-20 justify-items-center"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  my-20 justify-items-center lg:gap-4"
       >
         {cards.map((card, index) => (
           <Card key={index} {...card} />

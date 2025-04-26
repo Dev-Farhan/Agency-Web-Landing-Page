@@ -62,17 +62,17 @@ const SectionWithLine = ({
             <span className="text-xl lg:text-2xl">{icon}</span>
           </div>
           <div>
-            <h3 className="text-lg font-medium">{title}</h3>
-            <p className="text-sm text-gray-500">{description}</p>
+            <h3 className="text-lg font-medium dark:text-primary-light">{title}</h3>
+            <p className="text-sm text-gray-500 dark:text-primary-gray">{description}</p>
           </div>
         </div>
-        <h2 className="lg:max-w-sm text-2xl font-semibold text-gray-800 mt-4 leading-normal">
+        <h2 className="lg:max-w-sm text-2xl font-semibold text-gray-800 dark:text-primary-gray mt-4 leading-normal">
           <span className="text-[#1090CB]">
             {heading.split(" ").slice(0, 2).join(" ")}
           </span>{" "}
           {heading.split(" ").slice(2).join(" ")}
         </h2>
-        <p className="lg:max-w-sm text-sm text-gray-600 mt-2">{text}</p>
+        <p className="lg:max-w-sm text-sm text-gray-600 dark:text-gray-500 mt-2">{text}</p>
       </motion.div>
 
       {/* Image */}
@@ -90,7 +90,7 @@ const SectionWithLine = ({
 
 const AnimatedSections = () => {
   return (
-    <div className="relative bg-white">
+    <div className="relativ">
       {sectionsData.map((section) => (
         <SectionWithLine
           key={section.id}

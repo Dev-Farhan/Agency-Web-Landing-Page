@@ -23,10 +23,10 @@ const ContactPage = () => {
             alt="Avatar"
             className="h-16 w-auto p-2 bg-[#F5F3DA] rounded-full"
           />
-          <h1 className="text-3xl font-semibold leading-relaxed tracking-wider lg:text-4xl my-4">
+          <h1 className="text-3xl font-semibold leading-relaxed tracking-wider lg:text-4xl my-4 dark:text-primary-light">
             Let's Collaborate
           </h1>
-          <p className="text-md max-w-xs text-[#777777] lg:my-6">
+          <p className="text-md max-w-xs text-[#777777] lg:my-6 dark:text-primary-gray">
             Lorem Ipsum is simply dummy text of the printing .
           </p>
         </motion.div>
@@ -42,7 +42,7 @@ const ContactPage = () => {
           transition={{ duration: 1 }}
           className=" flex flex-col gap-2"
         >
-          <p className="text-xs">Follow us</p>
+          <p className="text-xs dark:text-primary-light">Follow us</p>
           <div className="flex gap-6">
             <FaFacebook
               size={32}
@@ -69,8 +69,8 @@ const ContactPage = () => {
           transition={{ duration: 1 }}
           className="flex items-center gap-3 my-5"
         >
-          <FaPhone size={20} />
-          <p className="text-[#333333]">+94 4444 5555 6</p>
+          <FaPhone size={20} className="dark:text-primary-light" />
+          <p className="text-[#333333] dark:text-primary-light">+94 4444 5555 6</p>
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -78,17 +78,17 @@ const ContactPage = () => {
           transition={{ duration: 1 }}
           className="flex items-center gap-3"
         >
-          <FaLocationDot size={20} />
-          <p className="text-[#333333]">Lorem ipsum dolor sit amet.</p>
+          <FaLocationDot size={20} className="dark:text-primary-light" />
+          <p className="text-[#333333] dark:text-primary-light">Lorem ipsum dolor sit amet.</p>
         </motion.div>
       </div>
 
-      <div className="bg-[#E8F4FA] w-full text-center py-10">
+      <div className="bg-[#E8F4FA] dark:bg-primary-dark w-full text-center py-10">
         <motion.h1
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="text-2xl tracking-wider"
+          className="text-2xl tracking-wider dark:text-primary-light"
         >
           Say Hello
         </motion.h1>
@@ -108,7 +108,7 @@ const ContactPage = () => {
         >
           <div className="flex flex-col items-start gap-1 w-full">
             <label className="text-xs text-[#4F4F4F]">First Name</label>
-            <input type="text" className="p-2 rounded-md w-full" />
+            <input type="text" className="p-2 rounded-md w-full " />
           </div>
           <div className="flex flex-col items-start gap-1 w-full">
             <label className="text-xs text-[#4F4F4F]">Last Name</label>

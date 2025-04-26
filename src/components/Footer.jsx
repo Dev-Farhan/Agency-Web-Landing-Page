@@ -8,14 +8,14 @@ import { motion } from "motion/react";
 
 export default function Footer() {
   return (
-    <footer className="bg-white border-t border-gray-200 py-10">
+    <footer className="border-t border-gray-200 dark:border-gray-600 py-10">
       <motion.div
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 1 }}
         className="container mx-auto px-4"
       >
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 dark:text-primary-light">
           {/* Logo and Description */}
           <div className="space-y-4">
             <h2 className="text-lg font-bold text-blue-600">LOGO</h2>
@@ -91,7 +91,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-10 border-t border-gray-200 pt-5 text-center text-sm text-gray-500">
+        <div className="mt-10 border-t border-gray-200 dark:border-gray-600 pt-5 text-center text-sm text-gray-500">
           Copyright © 2021 Lorem All rights reserved
         </div>
       </motion.div>
