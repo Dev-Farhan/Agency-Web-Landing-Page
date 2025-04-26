@@ -73,7 +73,8 @@ const ServiceCard = ({ title, description, icon, bgColor }) => {
 const HomePage = () => {
   return (
     <div>
-      <div className="container min-h-screen max-w-full bg-[#1090cb46]">
+      {/* bg-[#1090cb46] */}
+      <div className="container min-h-screen max-w-full ">
         <img
           src="/sideImage.png"
           className="absolute right-0 bottom-10 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[60vh] lg:w-[60px]"
@@ -98,9 +99,6 @@ const HomePage = () => {
               platforms, including Android & IOS.{" "}
             </p>
             <div className="flex gap-3 items-center">
-              {/* <button className="bg-[#1090CB] px-4 py-2 rounded-md capitalize text-white hover:bg-white hover:border hover:border-[#1090CB] hover:text-[#1090CB] hover:ease-in">
-              contact us
-            </button> */}
               <button className="bg-[#1090CB] px-4 py-2 rounded-md capitalize text-white border border-transparent hover:bg-white hover:border-[#1090CB] hover:text-[#1090CB] transition duration-300 ease-in-out">
                 Contact Us
               </button>
@@ -122,7 +120,7 @@ const HomePage = () => {
               {/* Blur Circle */}
               <div className="w-64 h-64 bg-[#e7e19f] blur-3xl rounded-full"></div>
             </div>
-            <div className="max-w-xs md:max-w-lg">
+            <div className="max-w-auto md:max-w-lg">
               <img src="/heroImage.png" alt="Hero Image" />
             </div>
           </motion.div>

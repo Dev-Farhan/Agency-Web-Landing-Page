@@ -13,7 +13,7 @@ import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const location = useLocation();
   return (
-    <>
+    <div className="AppWrapper">
       <ScrollToTop />
       <Navbar />
       <Routes>
@@ -25,7 +25,7 @@ function App() {
       </Routes>
       {location.pathname !== "/contact" && <SubscribeBox />}
       <Footer />
-    </>
+    </div>
   );
 }
 
