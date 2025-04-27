@@ -102,7 +102,7 @@ const Navbar = ({darkMode ,setDarkMode}) => {
         </div>
 
            {/* Dark Mode Toggle Button */}
-           <div  className='hidden'>
+           <div  className='hidden md:block'>
 
       <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode}/>
            </div>

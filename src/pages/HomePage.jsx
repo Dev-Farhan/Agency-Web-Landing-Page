@@ -157,12 +157,10 @@ const HomePage = () => {
       <div>
         <div className="text-center py-24">
           <h1 className="text-3xl font-semibold dark:text-primary-light">
-            Lorem Ipsum is simply dummy text of the printing.{" "}
+          Transforming Ideas into Digital Realities.{" "}
           </h1>
           <p className="py-5 font-light dark:text-primary-gray">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-            <br /> Lorem Ipsum has been the industry's
+          We bridge imagination and technology to create powerful solutions that drive growth and inspire change.
           </p>
         </div>
         <AnimatedSections  />
@@ -176,7 +174,7 @@ const HomePage = () => {
           className="group px-4 py-5  lg:w-1/2 bg-[#F4F4F4] dark:bg-gray-500 dark:text-primary-light lg:px-20 lg:py-10  rounded-md flex flex-col items-center gap-5 hover:bg-[#1090CB] hover:text-white dark:hover:bg-[#1090CB] dark:hover:text-slate-200"
         >
           <h1 className="text-xl font-semibold text-center ">
-            Lorem Ipsum is simply <br /> dummy text.
+            About Us:
           </h1>
           <p className="text-sm text-center">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
@@ -196,7 +194,7 @@ const HomePage = () => {
        
           className="group px-4 py-5  lg:w-1/2 bg-[#F4F4F4] dark:bg-gray-500 dark:text-primary-light lg:px-20 lg:py-10  rounded-md flex flex-col items-center gap-5 hover:bg-[#1090CB] hover:text-white dark:hover:bg-[#1090CB] dark:hover:text-slate-200"        >
           <h1 className="text-xl font-semibold text-center">
-            Lorem Ipsum is simply <br /> dummy text.
+          About Us:
           </h1>
           <p className="text-sm text-center">
             KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web

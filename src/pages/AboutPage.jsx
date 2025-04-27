@@ -42,11 +42,11 @@ const AboutPage = () => {
           >
             <h6 className="text-primary">About Us</h6>
             <h1 className="text-2xl font-semibold lg:max-w-sm tracking-wider leading-relaxed dark:text-primary-light">
-              Lorem Ipsum is simply dummy text of the printing.{" "}
+            Driven by Innovation, Powered by Vision.{" "}
             </h1>
             <p className="text-sm text-[#868686] lg:max-w-sm leading-normal dark:text-primary-gray">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's
+            At FarAi Innovations, we believe that technology is more than just code — it's the bridge between ideas and success.
+            Founded by two passionate innovators, Farhan and Aihatesham, our mission is to empower businesses by building powerful digital solutions tailored to their goals.
             </p>
           </motion.div>
         </div>
@@ -78,7 +78,7 @@ const AboutPage = () => {
           transition={{ duration: 1 }}
           className="text-primary text-xl font-semibold mb-3 leading-snug tracking-wider lg:max-w-md lg:text-2xl"
         >
-          Lorem Ipsum is simply dummy text of the printing.{" "}
+          What We Stand For{" "}
         </motion.h1>
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
@@ -86,11 +86,11 @@ const AboutPage = () => {
           transition={{ duration: 1 }}
           className="text-sm text-[#585858] lg:max-w-5xl lg:text-lg lg:tracking-wider dark:text-primary-gray"
         >
-          KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-          applications and website builders measuring dozens of completed
-          projects. We build and develop mobile applications for several top
-          platforms, including Android & IOS. We build and develop mobile
-          applications for several top platforms, including Android & IOS.{" "}
+        •	Innovation First:We are always exploring, experimenting, and pushing boundaries to deliver next-gen solutions. <br />
+        •	Client-Centric Approach:Every project starts with your vision. We listen, understand, and craft solutions that truly fit your needs. <br />
+        •	Excellence in Execution:From design to development, we deliver with precision, passion, and performance. <br />
+        •	Collaboration Over Competition:We believe in partnerships, not just projects — working together to build success stories.
+  {" "}
         </motion.p>
       </div>
 
@@ -105,12 +105,11 @@ const AboutPage = () => {
           <div className="px-3">
             <p className="h-1 w-12 bg-black dark:bg-primary-light my-3"></p>
             <h1 className="text-lg font-semibold py-5 dark:text-primary-light">
-              Lorem Ipsum is simply dummy text of the printing.
+            Our Mission & Vision
             </h1>
             <p className="text-gray-600 text-sm mb-5 dark:text-primary-gray">
-              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-              applications and website builders measuring dozens of completed
-              projects.
+            At FarAi Innovations, we are driven to transform bold ideas into powerful digital solutions.
+            Our vision is to empower businesses to innovate, scale, and lead in a rapidly evolving digital world.
             </p>
             <button
               type="button"

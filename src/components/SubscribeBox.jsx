@@ -10,7 +10,8 @@ const SubscribeBox = () => {
         transition={{ duration: 1 }}
         className="text-center mb-10 text-xl font-semibold lg:text-3xl lg:w-1/3 dark:text-primary-light"
       >
-        Lorem Ipsum is simply dummy text of the printing.
+        Let’s build the future—
+        reach out to us today.
       </motion.p>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}

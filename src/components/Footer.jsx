@@ -20,8 +20,7 @@ export default function Footer() {
           <div className="space-y-4">
             <h2 className="text-lg font-bold text-blue-600">LOGO</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
+            "Empowering businesses through innovation, technology, and limitless creativity."
             </p>
             <p className="text-sm text-gray-500">@Lorem</p>
           </div>
@@ -92,7 +91,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-200 dark:border-gray-600 pt-5 text-center text-sm text-gray-500">
-          Copyright © 2021 Lorem All rights reserved
+        © 2025 FarAi Innovations. All rights reserved. Empowering Ideas, Shaping Futures.
         </div>
       </motion.div>
     </footer>

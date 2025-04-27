@@ -109,8 +109,7 @@ const ServicePage = () => {
             Our <span className="text-primary">Services</span>
           </h1>
           <p className="max-w-sm text-center text-[#696969] dark:text-primary-gray px-2">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's
+          At FarAi Innovations, we don't just offer services — we craft custom digital solutions that fuel innovation, accelerate growth, and future-proof your business.
           </p>
         </motion.div>
         <motion.div
@@ -148,19 +147,17 @@ const ServicePage = () => {
           className="px-2 md:w-1/2 md:ml-8 lg:ml-32"
         >
           <h1 className="text-xl font-semibold tracking-wider my-3 lg:text-3xl dark:text-primary-light">
-            <span className="text-primary">Lorem Ipsum</span> is simply dummy
+            <span className="text-primary">Crafting Digital </span>Solutions for a 
             <br />
-            text of the printing.{" "}
+            Smarter Tomorrow.{" "}
           </h1>
           <p className="text-sm text-[#545454] dark:text-primary-gray my-3 lg:max-w-lg lg:text-md lg:mb-5 leading-relaxed">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-            applications and website builders measuring dozens of completed
-            projects. We build and develop mobile applications for several top
-            platforms, including Android & IOS.
+            At FarAi Innovations, we offer a full spectrum of technology services designed to help businesses innovate, grow, and lead in the digital age.
+            Our solutions are tailored to your unique needs, blending creativity, strategy, and technology for real impact.
+
             <br />
             <br />
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-            applications and website builders measuring dozens
+            Have a project in mind? Let’s work together to bring your ideas to life and create innovative solutions that drive success. Reach out today!
           </p>
           <button
             type="button"
