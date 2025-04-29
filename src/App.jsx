@@ -10,15 +10,23 @@ import Footer from "./components/Footer";
 import SubscribeBox from "./components/SubscribeBox";
 import ScrollToTop from "./components/ScrollToTop";
 import { useEffect, useState } from "react";
+import Loader from "./components/Loader";
 
 function App() {
   const location = useLocation();
   const [darkMode, setDarkMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-   // Check if there's a saved theme in localStorage
-   useEffect(() => {
-    const storedTheme = localStorage.getItem('theme');
-    if (storedTheme === 'dark') {
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false); // Simulate loading
+    }, 3000); // 3 seconds
+  }, []);
+
+  // Check if there's a saved theme in localStorage
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
       setDarkMode(true);
     }
   }, []);
@@ -26,27 +34,33 @@ function App() {
   // Apply dark mode class to the <html> tag and save preference to localStorage
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   }, [darkMode]);
   return (
-    <div className="AppWrapper dark:bg-primary-dark">
-      <ScrollToTop />
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicePage />} />
-        <Route path="/blog" element={<BlogPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-      </Routes>
-      {location.pathname !== "/contact" && <SubscribeBox />}
-      <Footer />
-    </div>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="AppWrapper dark:bg-primary-dark">
+          <ScrollToTop />
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/services" element={<ServicePage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+          {location.pathname !== "/contact" && <SubscribeBox />}
+          <Footer />
+        </div>
+      )}
+    </>
   );
 }
 

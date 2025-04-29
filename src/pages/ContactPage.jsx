@@ -70,7 +70,9 @@ const ContactPage = () => {
           className="flex items-center gap-3 my-5"
         >
           <FaPhone size={20} className="dark:text-primary-light" />
-          <p className="text-[#333333] dark:text-primary-light">+94 4444 5555 6</p>
+          <p className="text-[#333333] dark:text-primary-light">
+            +94 4444 5555 6
+          </p>
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
@@ -79,7 +81,9 @@ const ContactPage = () => {
           className="flex items-center gap-3"
         >
           <FaLocationDot size={20} className="dark:text-primary-light" />
-          <p className="text-[#333333] dark:text-primary-light">Lorem ipsum dolor sit amet.</p>
+          <p className="text-[#333333] dark:text-primary-light">
+            Lorem ipsum dolor sit amet.
+          </p>
         </motion.div>
       </div>
 
@@ -108,15 +112,24 @@ const ContactPage = () => {
         >
           <div className="flex flex-col items-start gap-1 w-full">
             <label className="text-xs text-[#4F4F4F]">First Name</label>
-            <input type="text" className="p-2 rounded-md w-full " />
+            <input
+              type="text"
+              className="p-2 rounded-md w-full dark:bg-gray-400"
+            />
           </div>
           <div className="flex flex-col items-start gap-1 w-full">
             <label className="text-xs text-[#4F4F4F]">Last Name</label>
-            <input type="text" className="p-2 rounded-md w-full" />
+            <input
+              type="text"
+              className="p-2 rounded-md w-full dark:bg-gray-400"
+            />
           </div>
           <div className="flex flex-col items-start gap-1 w-full md:col-span-2">
             <label className="text-xs text-[#4F4F4F]">Email</label>
-            <input type="text" className="p-2 rounded-md w-full" />
+            <input
+              type="text"
+              className="p-2 rounded-md w-full dark:bg-gray-400"
+            />
           </div>
           <div className="flex flex-col items-start gap-1 w-full md:col-span-2">
             <label htmlFor="message" className="text-xs text-[#4F4F4F]">
@@ -124,7 +137,7 @@ const ContactPage = () => {
             </label>
             <textarea
               id="message"
-              className="p-2 rounded-md resize-none w-full"
+              className="p-2 rounded-md resize-none w-full dark:bg-gray-400"
               rows="4"
             ></textarea>
           </div>

@@ -108,15 +108,17 @@ const ServicePage = () => {
           <h1 className="text-3xl font-semibold dark:text-primary-light">
             Our <span className="text-primary">Services</span>
           </h1>
-          <p className="max-w-sm text-center text-[#696969] dark:text-primary-gray px-2">
-          At FarAi Innovations, we don't just offer services — we craft custom digital solutions that fuel innovation, accelerate growth, and future-proof your business.
+          <p className="max-w-2xl text-center text-[#696969] dark:text-primary-gray px-2">
+            At Xpert Solution, we don't just offer services — we craft custom
+            digital solutions that fuel innovation, accelerate growth, and
+            future-proof your business.
           </p>
         </motion.div>
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 100 }}
           transition={{ duration: 1 }}
-          className="bg-white grid grid-cols-1 md:grid-cols-2 rounded-lg mt-10 mb-10"
+          className="bg-white dark:bg-transparent grid grid-cols-1 md:grid-cols-2 rounded-lg mt-10 mb-10"
         >
           {services.map((service) => (
             <div
@@ -129,8 +131,10 @@ const ServicePage = () => {
                 className={`h-16 p-2 rounded-md ${service.bgColor} mr-4`}
               />
               <div className="flex flex-col gap-2">
-                <h3 className="text-lg font-medium">{service.title}</h3>
-                <p className="text-sm text-[#797979] max-w-sm">
+                <h3 className="text-lg font-medium dark:text-white ">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-[#797979] max-w-sm dark:text-primary-gray">
                   {service.description}
                 </p>
               </div>
@@ -147,17 +151,21 @@ const ServicePage = () => {
           className="px-2 md:w-1/2 md:ml-8 lg:ml-32"
         >
           <h1 className="text-xl font-semibold tracking-wider my-3 lg:text-3xl dark:text-primary-light">
-            <span className="text-primary">Crafting Digital </span>Solutions for a 
+            <span className="text-primary">Crafting Digital </span>Solutions for
+            a
             <br />
             Smarter Tomorrow.{" "}
           </h1>
           <p className="text-sm text-[#545454] dark:text-primary-gray my-3 lg:max-w-lg lg:text-md lg:mb-5 leading-relaxed">
-            At FarAi Innovations, we offer a full spectrum of technology services designed to help businesses innovate, grow, and lead in the digital age.
-            Our solutions are tailored to your unique needs, blending creativity, strategy, and technology for real impact.
-
+            At FarAi Innovations, we offer a full spectrum of technology
+            services designed to help businesses innovate, grow, and lead in the
+            digital age. Our solutions are tailored to your unique needs,
+            blending creativity, strategy, and technology for real impact.
             <br />
             <br />
-            Have a project in mind? Let’s work together to bring your ideas to life and create innovative solutions that drive success. Reach out today!
+            Have a project in mind? Let’s work together to bring your ideas to
+            life and create innovative solutions that drive success. Reach out
+            today!
           </p>
           <button
             type="button"

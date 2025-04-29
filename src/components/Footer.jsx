@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa";
 import { motion } from "motion/react";
+import { Link } from "react-router";
 
 export default function Footer() {
   return (
@@ -20,34 +21,35 @@ export default function Footer() {
           <div className="space-y-4">
             <h2 className="text-lg font-bold text-blue-600">LOGO</h2>
             <p>
-            "Empowering businesses through innovation, technology, and limitless creativity."
+              "Empowering businesses through innovation, technology, and
+              limitless creativity."
             </p>
             <p className="text-sm text-gray-500">@Lorem</p>
           </div>
 
           {/* About Us Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">About us</h3>
+            <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="hover:text-blue-600">
-                  Lorem
-                </a>
+                <Link to="/" className="hover:text-blue-600">
+                  Home
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
-                  Portfolio
-                </a>
+                <Link to="/about" className="hover:text-blue-600">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
-                  Careers
-                </a>
+                <Link to="/services" className="hover:text-blue-600">
+                  Services
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-600">
+                <Link to="/contact" className="hover:text-blue-600">
                   Contact us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,7 +93,8 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="mt-10 border-t border-gray-200 dark:border-gray-600 pt-5 text-center text-sm text-gray-500">
-        © 2025 FarAi Innovations. All rights reserved. Empowering Ideas, Shaping Futures.
+          © 2025 Xpert Solution Innovations. All rights reserved. Empowering
+          Ideas, Shaping Futures.
         </div>
       </motion.div>
     </footer>

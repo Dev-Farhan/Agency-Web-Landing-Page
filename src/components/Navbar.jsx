@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router";
 import ThemeToggleButton from "./ThemeToggleButton";
 
-const Navbar = ({darkMode ,setDarkMode}) => {
+const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -17,30 +17,29 @@ const Navbar = ({darkMode ,setDarkMode}) => {
 
   return (
     <div className="sticky top-0 z-50 bg-white shadow-md dark:bg-primary-dark">
-      <div className="container flex items-center justify-between md:justify-between px-6 py-4 md:py-7">
+      <div className="container flex items-center justify-between md:justify-between lg:justify-between px-6 py-4 md:py-7">
         <div className="font-bold text-[#1090CB] uppercase">
           <a href="/" className="md:text-xl">
             Logo
           </a>
         </div>
-      
+
         {/* <div className="text-bold lg:hidden">
           <GiHamburgerMenu color="#1090CB" onClick={() => setIsOpen(true)} />
         </div> */}
         <div className="flex items-center gap-4">
-  <div className="lg:hidden">
-    <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode} />
-  </div>
+          <div className="lg:hidden">
+            <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode} />
+          </div>
 
-  <div className="lg:hidden">
-    <GiHamburgerMenu
-      color="#1090CB"
-      onClick={() => setIsOpen(true)}
-      size={24}
-    />
-  </div>
-</div>
-
+          <div className="lg:hidden">
+            <GiHamburgerMenu
+              color="#1090CB"
+              onClick={() => setIsOpen(true)}
+              size={24}
+            />
+          </div>
+        </div>
 
         {/* Mobile Navigation */}
         <div
@@ -92,7 +91,9 @@ const Navbar = ({darkMode ,setDarkMode}) => {
                 {location.pathname === item.path && (
                   <span className="absolute -left-3 top-1/5 transform -translate-y-1/2 w-2 h-2 bg-green-500 rounded-full"></span>
                 )}
-                <NavLink className="" to={item.path}>{item.name}</NavLink>
+                <NavLink className="" to={item.path}>
+                  {item.name}
+                </NavLink>
               </li>
             ))}
             <button className="bg-[#1090CB] text-white px-4 py-2 rounded-lg">
@@ -101,11 +102,10 @@ const Navbar = ({darkMode ,setDarkMode}) => {
           </ul>
         </div>
 
-           {/* Dark Mode Toggle Button */}
-           <div  className='hidden md:block'>
-
-      <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode}/>
-           </div>
+        {/* Dark Mode Toggle Button */}
+        <div className="hidden lg:flex">
+          <ThemeToggleButton darkMode={darkMode} setDarkMode={setDarkMode} />
+        </div>
       </div>
     </div>
   );

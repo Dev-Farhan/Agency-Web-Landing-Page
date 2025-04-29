@@ -1,61 +1,129 @@
 import React from "react";
 import { motion } from "motion/react";
 import AnimatedSections from "../components/AnimatedSection";
-
+import { Link } from "react-router";
+import { DynamicSlider } from "../components/DynamicSlider";
+import { FaJsSquare } from "react-icons/fa";
+import { RiNextjsLine, RiReactjsLine } from "react-icons/ri";
+import { DiNodejs } from "react-icons/di";
+import { SiMongodb, SiMysql, SiExpress } from "react-icons/si";
+import { FaWordpress } from "react-icons/fa6";
 const services = [
   {
     id: 1,
     title: "Web Application",
-    description: "Lorem Ipsum is simply",
+    description: "Responsive, modern websites.",
     icon: "/icons/web-application.png",
     bgColor: "bg-purple-100",
   },
   {
     id: 2,
     title: "SEO",
-    description: "Lorem Ipsum is simply",
+    description: "Boost online visibility.",
     icon: "/icons/seo.png",
     bgColor: "bg-green-100",
   },
   {
     id: 3,
-    title: "AR/VR Solutions",
-    description: "Lorem Ipsum is simply",
-    icon: "/icons/ar-vr.png",
+    title: "UI/UX Design",
+    description: "Beautiful, intuitive designs.",
+    icon: "/icons/web-design.png",
     bgColor: "bg-blue-100",
   },
   {
     id: 4,
     title: "Mobile Applications",
-    description: "Lorem Ipsum is simply",
+    description: "Powerful mobile apps.",
     icon: "/icons/mobile-app.png",
     bgColor: "bg-orange-100",
+  },
+];
+const testimonials = [
+  {
+    name: "John Kabras",
+    description:
+      "“Working with this team has been a game-changer for us. Their dedication and innovation helped us scale our business exponentially. As CEO, I can confidently say they are the best in the industry.”",
+    image: "/members/ceo.png",
+    rating: 4.5,
+  },
+  {
+    name: "Philips Shene Moris",
+    description:
+      "“The level of professionalism and expertise shown by the team has been unmatched. They’ve consistently delivered beyond expectations. I’m proud to work with such a talented group of people.”",
+    image: "/members/coo.png",
+    rating: 4,
+  },
+  {
+    name: "Equarn Shamir Mohomad",
+    description:
+      "“As a Tech Lead, it's rare to come across a team that is as forward-thinking and dedicated as this one. They always prioritize cutting-edge solutions while maintaining quality and efficiency. Simply outstanding!”",
+    image: "/members/lead.png",
+    rating: 5,
+  },
+  {
+    name: "Janka Indrajith",
+    description:
+      "“The UX team has played a pivotal role in enhancing our user experience. Their design expertise and user-centered approach have significantly improved the overall engagement and satisfaction of our users.”",
+    image: "/members/coo.png",
+    rating: 4.5,
   },
 ];
 
 const logos = [
   {
     id: 0,
-    logo: "/logos/bene.png",
+    logo: <FaJsSquare />,
+    color: "text-yellow-500", // JavaScript color (light mode)
+    darkColor: "text-yellow-300", // Adjusted color for dark mode
   },
   {
     id: 1,
-    logo: "/logos/cas.png",
+    logo: <RiReactjsLine />,
+    color: "text-blue-500", // React color (light mode)
+    darkColor: "text-blue-400", // Adjusted color for dark mode
   },
   {
     id: 2,
-    logo: "/logos/hype.png",
+    logo: <DiNodejs />,
+    color: "text-green-600", // Node.js color (light mode)
+    darkColor: "text-green-500", // Adjusted color for dark mode
   },
   {
-    id: 0,
-    logo: "/logos/leo.png",
+    id: 3,
+    logo: <RiNextjsLine />,
+    color: "text-black", // Next.js color (light mode)
+    darkColor: "text-white", // Adjusted color for dark mode
+  },
+  {
+    id: 4,
+    logo: <SiMongodb />,
+    color: "text-green-800", // MongoDB color (light mode)
+    darkColor: "text-green-700", // Adjusted color for dark mode
+  },
+  {
+    id: 5,
+    logo: <SiMysql />,
+    color: "text-blue-600", // MySQL color (light mode)
+    darkColor: "text-blue-500", // Adjusted color for dark mode
+  },
+  {
+    id: 6,
+    logo: <SiExpress />,
+    color: "text-gray-800", // Express color (light mode)
+    darkColor: "text-white", // Adjusted color for dark mode
+  },
+  {
+    id: 7,
+    logo: <FaWordpress />,
+    color: "text-blue-700", // WordPress color (light mode)
+    darkColor: "text-blue-600", // Adjusted color for dark mode
   },
 ];
 
 const ServiceCard = ({ title, description, icon, bgColor }) => {
   return (
     <motion.div
-      className={`flex items-center gap-3 p-5 `}
+      className={`flex items-center gap-3 p-5 z-10 `}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -65,7 +133,9 @@ const ServiceCard = ({ title, description, icon, bgColor }) => {
       </div>
       <div>
         <h3 className="text-md font-medium dark:text-primary-light">{title}</h3>
-        <p className="text-sm text-gray-500 dark:text-primary-gray">{description}</p>
+        <p className="text-sm text-gray-500 dark:text-primary-gray">
+          {description}
+        </p>
       </div>
     </motion.div>
   );
@@ -74,7 +144,7 @@ const HomePage = () => {
   return (
     <div>
       {/* bg-[#1090cb46] */}
-      <div className="container min-h-screen max-w-full dark:bg-[#1E1E1E]">
+      <div className="container mx-auto dark:bg-[#1E1E1E]">
         <img
           src="/sideImage.png"
           className="absolute right-0 bottom-10 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[60vh] lg:w-[60px]"
@@ -89,29 +159,36 @@ const HomePage = () => {
             transition={{ type: "spring", stiffness: 50, duration: 0.8 }}
           >
             <h1 className="text-2xl tracking-wide font-semibold md:text-4xl dark:text-white">
-              Experienced <span className="text-[#34befe]">mobile and web</span>{" "}
-              applications and website builders measuring.
+              Empowering <span className="text-[#34befe]">Businesses</span> with
+              Innovative IT Solutions
             </h1>
             <p className="text-sm md:text-lg dark:text-white">
-              KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-              applications and website builders measuring dozens of completed
-              projects. We build and develop mobile applications for several top
-              platforms, including Android & IOS.{" "}
+              At Xpert Solution, we specialize in delivering cutting-edge web,
+              mobile, and software solutions tailored to your business needs.
+              From startups to enterprises, we help you grow with technology
+              that drives results.{" "}
             </p>
             <div className="flex gap-3 items-center">
-              <button className="bg-[#1090CB] px-4 py-2 rounded-md capitalize text-white border border-transparent hover:bg-white hover:border-[#1090CB] hover:text-[#1090CB] transition duration-300 ease-in-out">
-                Contact Us
+              <button
+                onClick={() => {
+                  document
+                    .getElementById("services")
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="bg-[#1090CB] px-4 py-2 rounded-md capitalize text-white border border-transparent hover:bg-white hover:border-[#1090CB] hover:text-[#1090CB] transition duration-300 ease-in-out"
+              >
+                Get Started
               </button>
 
               <button className="border border-[#1090CB] px-4 py-2 rounded-md capitalize text-[#1090CB] bg-white hover:bg-[#1090CB] hover:text-white hover:border-transparent transition duration-300 ease-in-out">
-                View More
+                <Link to="/about">View More</Link>
               </button>
             </div>
           </motion.div>
 
           {/* right side */}
           <motion.div
-            className="relative flex justify-center items-center py-3 lg:w-1/2"
+            className="relative flex justify-center items-center py-3 lg:w-1/2 mt-20"
             initial={{ x: "100vw", opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ type: "spring", stiffness: 50, duration: 1 }}
@@ -139,6 +216,7 @@ const HomePage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
+        id="services"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service) => (
@@ -155,78 +233,62 @@ const HomePage = () => {
       {/* service card section end  */}
 
       <div>
-        <div className="text-center py-24">
+        <div className="text-center py-24 px-6">
           <h1 className="text-3xl font-semibold dark:text-primary-light">
-          Transforming Ideas into Digital Realities.{" "}
+            Transforming Ideas into Digital Realities.{" "}
           </h1>
           <p className="py-5 font-light dark:text-primary-gray">
-          We bridge imagination and technology to create powerful solutions that drive growth and inspire change.
+            We bridge imagination and technology to create powerful solutions
+            that drive growth and inspire change.
           </p>
         </div>
-        <AnimatedSections  />
+        <AnimatedSections />
       </div>
 
-      <div className="flex flex-col px-10 items-center gap-9 lg:flex-row lg:gap-14 lg:px-36 mb-4">
-        <motion.div
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: -100 }}
-          transition={{ duration: 0.5 }}
-          className="group px-4 py-5  lg:w-1/2 bg-[#F4F4F4] dark:bg-gray-500 dark:text-primary-light lg:px-20 lg:py-10  rounded-md flex flex-col items-center gap-5 hover:bg-[#1090CB] hover:text-white dark:hover:bg-[#1090CB] dark:hover:text-slate-200"
-        >
-          <h1 className="text-xl font-semibold text-center ">
-            About Us:
-          </h1>
-          <p className="text-sm text-center">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-            applications and website builders measuring dozens of completed
-            projects. We build and develop mobile applications for several top
-            platforms, including Android & IOS.{" "}
-          </p>
-          <button className="bg-[#1090CB] text-white p-3 rounded-md text-sm group-hover:bg-white group-hover:text-[#1090CB] dark:group-">
-            View More
-          </button>
-        </motion.div>
-
-        <motion.div
+      {/* technologies marquee start */}
+      <div className="px-10 overflow-hidden">
+        <motion.h2
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 0.5 }}
-       
-          className="group px-4 py-5  lg:w-1/2 bg-[#F4F4F4] dark:bg-gray-500 dark:text-primary-light lg:px-20 lg:py-10  rounded-md flex flex-col items-center gap-5 hover:bg-[#1090CB] hover:text-white dark:hover:bg-[#1090CB] dark:hover:text-slate-200"        >
-          <h1 className="text-xl font-semibold text-center">
-          About Us:
-          </h1>
-          <p className="text-sm text-center">
-            KODEX TECHNOLOGY (PVT) LTD is a team of experienced mobile and web
-            applications and website builders measuring dozens of completed
-            projects. We build and develop mobile applications for several top
-            platforms, including Android & IOS.{" "}
-          </p>
-          <button className="bg-[#1090CB] text-white p-3 rounded-md text-sm group-hover:bg-white group-hover:text-[#1090CB]">
-            View More
-          </button>
-        </motion.div>
-      </div>
-
-      <div className="py-20 px-10 overflow-hidden">
-        <motion.p
-          whileInView={{ opacity: 1, x: 0 }}
-          initial={{ opacity: 0, x: 100 }}
-          transition={{ duration: 0.5 }}
-          className="text-center text-xl font-semibold dark:text-primary-light"
+          className="text-center text-3xl font-semibold dark:text-primary-light"
         >
-          You will be in good Company
-        </motion.p>
-        <motion.div className="flex gap-5 animate-marquee">
-          {logos.concat(logos).map((image, index) => (
-            <img
+          Technologies & Tools We Use
+        </motion.h2>
+        <motion.div className="flex gap-3 animate-marquee">
+          {logos.concat(logos).map((item, index) => (
+            <div
               key={index}
-              src={image.logo}
-              alt="Logo"
-              className="h-40 w-auto mr-36"
-            />
+              className="h-40 w-auto mr-36 flex justify-center items-center"
+            >
+              {/* Apply light mode color and dark mode color using Tailwind */}
+              <div className={`text-6xl ${item.color} dark:${item.darkColor}`}>
+                {item.logo}
+              </div>
+            </div>
           ))}
         </motion.div>
+      </div>
+      {/* technologies marquee end */}
+
+      <div>
+        {/* <motion.div
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 0.5 }}
+> */}
+
+        <div>
+          <DynamicSlider
+            customStyle=" py-12"
+            sectionTitle="What Our Clients Say"
+            imageShape="round"
+            imageSize="medium"
+            textSize="small"
+            layout="testimonial"
+            keyMapping={testimonials}
+          />
+        </div>
       </div>
     </div>
   );

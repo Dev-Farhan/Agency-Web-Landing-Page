@@ -6,7 +6,13 @@ export default {
     extend: {
       fontFamily: { sans: ["Poppins", "sans-serif"] },
       animation: {
-        marquee: "marquee 30s linear infinite",
+        marquee: 'marquee 20s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
       },
       colors: {
         primary: {
