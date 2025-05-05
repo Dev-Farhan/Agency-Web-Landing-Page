@@ -11,6 +11,7 @@ import SubscribeBox from "./components/SubscribeBox";
 import ScrollToTop from "./components/ScrollToTop";
 import { useEffect, useState } from "react";
 import Loader from "./components/Loader";
+import NexsysLoader from "./components/NexsysLoader";
 
 function App() {
   const location = useLocation();
@@ -18,9 +19,36 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => {
-      setLoading(false); // Simulate loading
-    }, 3000); // 3 seconds
+    const images = Array.from(document.images);
+    let loadedCount = 0;
+
+    if (images.length === 0) {
+      setLoading(false);
+      return;
+    }
+
+    const handleImageLoad = () => {
+      loadedCount++;
+      if (loadedCount === images.length) {
+        setLoading(false);
+      }
+    };
+
+    images.forEach((img) => {
+      if (img.complete) {
+        handleImageLoad();
+      } else {
+        img.addEventListener("load", handleImageLoad);
+        img.addEventListener("error", handleImageLoad); // Handle failed loads
+      }
+    });
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", handleImageLoad);
+        img.removeEventListener("error", handleImageLoad);
+      });
+    };
   }, []);
 
   // Check if there's a saved theme in localStorage
@@ -44,7 +72,7 @@ function App() {
   return (
     <>
       {loading ? (
-        <Loader />
+        <NexsysLoader />
       ) : (
         <div className="AppWrapper dark:bg-primary-dark">
           <ScrollToTop />

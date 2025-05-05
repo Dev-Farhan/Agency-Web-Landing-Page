@@ -18,11 +18,13 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   return (
     <div className="sticky top-0 z-50 bg-white shadow-md dark:bg-primary-dark">
       <div className="container flex items-center justify-between md:justify-between lg:justify-between px-6 py-4 md:py-7">
-        <div className="font-bold text-[#1090CB] uppercase">
-          <a href="/" className="md:text-xl">
-            Logo
-          </a>
-        </div>
+        <a href="/" className="md:text-xl">
+          <img
+            src="/logo3.png"
+            alt="logo"
+            className="w-32 h-18 filter brightness-125"
+          />
+        </a>
 
         {/* <div className="text-bold lg:hidden">
           <GiHamburgerMenu color="#1090CB" onClick={() => setIsOpen(true)} />

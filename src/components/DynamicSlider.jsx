@@ -43,7 +43,7 @@ export const DynamicSlider = ({
   return (
     <div className={`py-12 ${customStyle}`}>
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-start px-4 mb-8 dark:text-primary-light">
+        <h2 className="text-3xl font-bold text-center px-4 mb-8 dark:text-primary-light">
           {sectionTitle}
         </h2>
         <Slider {...sliderSettings}>

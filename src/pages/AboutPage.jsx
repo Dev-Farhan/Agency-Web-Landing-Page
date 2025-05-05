@@ -55,6 +55,7 @@ const AboutPage = () => {
               src="/about/about2.png"
               alt="About"
               className="h-64 md:max-h-44 lg:max-h-96 w-auto "
+              loading="lazy"
             />
           </motion.div>
           <motion.div

@@ -19,12 +19,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-700 dark:text-primary-light">
           {/* Logo and Description */}
           <div className="space-y-4">
-            <h2 className="text-lg font-bold text-blue-600">LOGO</h2>
-            <p>
-              "Empowering businesses through innovation, technology, and
-              limitless creativity."
-            </p>
-            <p className="text-sm text-gray-500">@Lorem</p>
+            {/* <h2 className="text-lg font-bold text-blue-600">LOGO</h2> */}
+            <a href="/" className="md:text-xl">
+              <img
+                src="/logo3.png"
+                alt="logo"
+                className="w-32 h-18 filter brightness-125"
+              />
+            </a>
+            <div className="ml-3">
+              <p>
+                "Empowering businesses through innovation, technology, and
+                limitless creativity."
+              </p>
+              <p className="text-sm text-gray-500">@Lorem</p>
+            </div>
           </div>
 
           {/* About Us Links */}
