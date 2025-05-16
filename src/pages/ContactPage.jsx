@@ -8,6 +8,7 @@ import {
   FaTwitter,
 } from "react-icons/fa6";
 import { motion } from "motion/react";
+import MapImg from "../assets/map.png";
 
 const ContactPage = () => {
   return (
@@ -31,11 +32,7 @@ const ContactPage = () => {
           </p>
         </motion.div>
         <div>
-          <img
-            src="/src/assets/map.png"
-            alt="Map"
-            className="max-w-xs lg:max-w-xl"
-          />
+          <img src={MapImg} alt="Map" className="max-w-xs lg:max-w-xl" />
         </div>
       </div>
 

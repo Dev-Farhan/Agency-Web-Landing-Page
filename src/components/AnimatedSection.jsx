@@ -2,6 +2,9 @@ import { motion } from "motion/react";
 import { GoGoal } from "react-icons/go";
 import { FaQuestion } from "react-icons/fa";
 import { GrServices } from "react-icons/gr";
+import Image1 from "../assets/plan-planning-strategy-bysiness-ideas-concept.jpg";
+import Image2 from "../assets/question-mark-icon.jpg";
+import Image3 from "../assets/concept-m.jpg";
 
 export const sectionsData = [
   {
@@ -11,7 +14,7 @@ export const sectionsData = [
     description: "",
     heading: "Driven by Innovation, Empowered by Excellence.",
     text: "We specialize in crafting solutions that align with your goals. From custom tech services to strategic design, we help businesses like yours overcome obstacles and stay ahead of the curve.",
-    image: "/src/assets/plan-planning-strategy-bysiness-ideas-concept.jpg",
+    image: Image1,
     reverse: false,
   },
   {
@@ -21,7 +24,7 @@ export const sectionsData = [
     description: "",
     heading: "Why Choose Xpert Solution?",
     text: "At Xpert Solution, we turn ideas into powerful digital experiences. With a team of seasoned experts, a passion for innovation, and a commitment to excellence, we deliver tailored IT solutions that help businesses grow and lead. We believe in transparent processes, cutting-edge technologies, and a client-first approach — ensuring your success at every stage.",
-    image: "/src/assets/question-mark-icon.jpg",
+    image: Image2,
     reverse: true,
   },
   {
@@ -32,7 +35,7 @@ export const sectionsData = [
     heading: "Solutions Designed for the Future.",
     // text: "We offer a wide range of technology services tailored to your business needs: Custom Software Development — Tailored applications built for performance and scalability. Website & App Development — Seamless, user-focused digital experiences. Cloud & Infrastructure Solutions — Secure, scalable, and future-ready cloud strategies UI/UX Design — Beautiful interfaces that connect brands with users. IT Consulting — Expert advice to align your tech with your business goals. .",
     text: "At Xpert Solution, we offer a full spectrum of IT services designed to empower your business. From custom web and mobile app development to UI/UX design and digital consulting, we provide innovative solutions that drive real results. Let us help you transform your vision into reality with technology built for success.",
-    image: "/src/assets/concept-m.jpg",
+    image: Image3,
     reverse: false,
   },
 ];

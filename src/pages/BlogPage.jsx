@@ -1,6 +1,12 @@
-import React from "react";
 import { IoIosSearch } from "react-icons/io";
 import { motion } from "motion/react";
+import Project1 from "../assets/project/p1.png";
+import Project2 from "../assets/project/p2.png";
+import Project3 from "../assets/project/p3.png";
+import Blog1 from "../assets/blog/b2.png";
+import Blog2 from "../assets/blog/b3.png";
+import Blog3 from "../assets/blog/b4.png";
+import Blog4 from "../assets/blog/b1.png";
 
 const Card = ({ image, title, text, name, date }) => {
   return (
@@ -39,42 +45,42 @@ const Card = ({ image, title, text, name, date }) => {
 const BlogPage = () => {
   const cards = [
     {
-      image: "/src/assets/blog/b2.png",
+      image: Blog1,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
       date: "20.12.2020",
     },
     {
-      image: "/src/assets/blog/b3.png",
+      image: Blog2,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
       date: "20.12.2020",
     },
     {
-      image: "/src/assets/blog/b4.png",
+      image: Blog3,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
       date: "20.12.2020",
     },
     {
-      image: "/src/assets/project/p1.png",
+      image: Project1,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
       date: "20.12.2020",
     },
     {
-      image: "/src/assets/project/p2.png",
+      image: Project2,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
       date: "20.12.2020",
     },
     {
-      image: "/src/assets/project/p3.png",
+      image: Project3,
       title: "Lorem Ipsum is simply dummy text of the printing.",
       text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the .",
       name: "Name here",
@@ -124,7 +130,7 @@ const BlogPage = () => {
           className="flex items-center justify-center md:w1/2"
         >
           <img
-            src="/src/assets/blog/b1.png"
+            src={Blog4}
             alt="blog"
             className="max-w-sm rounded-md lg:max-w-xl"
           />

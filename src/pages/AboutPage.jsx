@@ -1,28 +1,42 @@
 import React from "react";
 import { motion } from "motion/react";
 import { DynamicSlider } from "../components/DynamicSlider";
+import Team1 from "../assets/members/ceo.png";
+import Team2 from "../assets/members/coo.png";
+import Team3 from "../assets/members/lead.png";
+import Team4 from "../assets/members/coo.png";
+import About1 from "../assets/aboutSide.png";
+import About2 from "../assets/aboutLeft.png";
+import About3 from "../assets/about/about1.png";
+import About4 from "../assets/about/about2.png";
+import About5 from "../assets/about/about3.png";
+import About6 from "../assets/about/about4.png";
+import WebIcon from "../assets/icons/web-application.png";
+import SeoIcon from "../assets/icons/seo.png";
+import UiIcon from "../assets/icons/web-design.png";
+import MobIcon from "../assets/icons/mobile-app.png";
 
 const AboutPage = () => {
   const teamMembers = [
     {
       name: "John Kabras",
       description: "CEO",
-      image: "/src/assets/members/ceo.png",
+      image: Team1,
     },
     {
       name: "Philips Shene Moris",
       description: "COO",
-      image: "/src/assets/members/coo.png",
+      image: Team2,
     },
     {
       name: "Equarn Shamir Mohomad",
       description: "Tech Lead",
-      image: "/src/assets/members/lead.png",
+      image: Team3,
     },
     {
       name: "Janka Indrajith",
       description: "Head of UX",
-      image: "/src/assets/members/coo.png",
+      image: Team4,
     },
   ];
   return (
@@ -31,12 +45,12 @@ const AboutPage = () => {
       <div className="relative">
         <div className="relative flex flex-col-reverse mt-10 px-3 md:flex-row lg:px-20 lg:items-center lg:justify-center lg:gap-20 lg:py-14">
           <img
-            src="/src/assets/aboutSide.png"
+            src={About1}
             alt="P"
             className="hidden md:block absolute bottom-20 right-0 h-60 w-auto"
           />
           <img
-            src="/src/assets/aboutLeft.png"
+            src={About2}
             alt="P"
             className="hidden md:block absolute -bottom-80 left-0 h-60 w-auto"
           />
@@ -47,12 +61,12 @@ const AboutPage = () => {
             className="flex items-end gap-5"
           >
             <img
-              src="/src/assets/about/about1.png"
+              src={About3}
               alt="About"
               className="h-40 md:max-h-32 lg:max-h-56 w-auto"
             />
             <img
-              src="/src/assets/about/about2.png"
+              src={About4}
               alt="About"
               className="h-64 md:max-h-44 lg:max-h-96 w-auto "
               loading="lazy"
@@ -85,12 +99,12 @@ const AboutPage = () => {
           className="flex flex-col md:flex-row md:justify-center gap-5 md:gap-8 py-4 px-4"
         >
           <img
-            src="/src/assets/about/about3.png"
+            src={About5}
             alt="About"
             className="w-full md:w-1/4 object-cover"
           />
           <img
-            src="/src/assets/about/about4.png"
+            src={About6}
             alt="About"
             className="w-full md:w-1/4 object-cover"
           />
@@ -163,7 +177,7 @@ const AboutPage = () => {
           {/* <!-- Card 1 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/src/assets/icons/webLog.png"
+              src={WebIcon}
               alt="web"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -175,7 +189,7 @@ const AboutPage = () => {
           {/* <!-- Card 2 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/src/assets/icons/seoLog.png"
+              src={SeoIcon}
               alt="seo"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -185,7 +199,7 @@ const AboutPage = () => {
           {/* <!-- Card 3 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/src/assets/icons/mobLog.png"
+              src={MobIcon}
               alt="mobile"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -197,13 +211,11 @@ const AboutPage = () => {
           {/* <!-- Card 4 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/src/assets/icons/arLog.png"
+              src={UiIcon}
               alt="arvr"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
-            <p className="text-[#2E0D64] font-medium dark:text-white">
-              Digital Marketing
-            </p>
+            <p className="text-[#2E0D64] font-medium dark:text-white">UI/UX</p>
           </article>
         </motion.div>
       </div>

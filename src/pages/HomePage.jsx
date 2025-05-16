@@ -15,6 +15,9 @@ import MobIcon from "../assets/icons/mobile-app.png";
 import HeroImg from "../assets/heroImage.png";
 import BottomImg from "../assets/bottomImage.png";
 import SideImg from "../assets/sideImage.png";
+import Client1 from "../assets/members/ceo.png";
+import Client2 from "../assets/members/coo.png";
+import Client3 from "../assets/members/lead.png";
 
 const services = [
   {
@@ -46,33 +49,34 @@ const services = [
     bgColor: "bg-orange-100",
   },
 ];
+
 const testimonials = [
   {
     name: "John Kabras",
     description:
       "“Working with this team has been a game-changer for us. Their dedication and innovation helped us scale our business exponentially. As CEO, I can confidently say they are the best in the industry.”",
-    image: "/src/assets/members/ceo.png",
+    image: Client1,
     rating: 4.5,
   },
   {
     name: "Philips Shene Moris",
     description:
       "“The level of professionalism and expertise shown by the team has been unmatched. They’ve consistently delivered beyond expectations. I’m proud to work with such a talented group of people.”",
-    image: "/src/assets/members/coo.png",
+    image: Client2,
     rating: 4,
   },
   {
     name: "Equarn Shamir Mohomad",
     description:
       "“As a Tech Lead, it's rare to come across a team that is as forward-thinking and dedicated as this one. They always prioritize cutting-edge solutions while maintaining quality and efficiency. Simply outstanding!”",
-    image: "/src/assets/members/lead.png",
+    image: Client3,
     rating: 5,
   },
   {
     name: "Janka Indrajith",
     description:
       "“The UX team has played a pivotal role in enhancing our user experience. Their design expertise and user-centered approach have significantly improved the overall engagement and satisfaction of our users.”",
-    image: "/src/assets/members/coo.png",
+    image: Client2,
     rating: 4.5,
   },
 ];

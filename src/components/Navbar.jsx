@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router";
 import ThemeToggleButton from "./ThemeToggleButton";
+import Logo from "../assets/logo3.png";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="container flex items-center justify-between md:justify-between lg:justify-between px-6 py-4 md:py-7">
         <a href="/" className="md:text-xl">
           <img
-            src="/src/assets/logo3.png"
+            src={Logo}
             alt="logo"
             className="w-32 h-18 filter brightness-125"
           />
@@ -68,9 +69,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             <Link to="/services" onClick={() => setIsOpen(false)}>
               Services
             </Link>
-            <Link to="/blog" onClick={() => setIsOpen(false)}>
+            {/* <Link to="/blog" onClick={() => setIsOpen(false)}>
               Blog
-            </Link>
+            </Link> */}
             <button className="bg-white text-black px-4 py-3 rounded-lg">
               <Link to="/contact" onClick={() => setIsOpen(false)}>
                 Contact Us{" "}

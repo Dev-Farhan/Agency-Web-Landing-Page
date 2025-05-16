@@ -1,16 +1,25 @@
-import React from "react";
 import StatsSection from "../components/StatsSection";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { motion } from "motion/react";
+import WebIcon from "../assets/icons/web-application.png";
+import SeoIcon from "../assets/icons/seo.png";
+import UiIcon from "../assets/icons/web-design.png";
+import MobIcon from "../assets/icons/mobile-app.png";
+import ServiceImg from "../assets/icons/speaker.png";
+import Project1 from "../assets/project/p1.png";
+import Project2 from "../assets/project/p2.png";
+import Project3 from "../assets/project/p3.png";
+import Project4 from "../assets/project/p1.png";
+import Project5 from "../assets/project/p2.png";
 
 const services = [
   {
     id: 1,
     title: "Mobile Applications",
     description: "The simplest but robust technology to accompany with you",
-    icon: "/src/assets/icons/mobLog.png",
+    icon: MobIcon,
     bgColor: "bg-[#F1E8FF]",
   },
   {
@@ -18,52 +27,52 @@ const services = [
     title: "Web Applications",
     description:
       "Platform independant business solutions for maximum availability",
-    icon: "/src/assets/icons/webLog.png",
+    icon: WebIcon,
     bgColor: "bg-[#FFF2F2]",
   },
   {
     id: 3,
     title: "SEO",
     description: "Let the world find you on top of others Lorem, ipsum dolor.",
-    icon: "/src/assets/icons/seoLog.png",
+    icon: SeoIcon,
     bgColor: "bg-[#E2F3FF]",
   },
   {
     id: 4,
-    title: "AR/VR Solutions",
+    title: "UI/UX Solutions",
     description: "Advanced autonomous technologies to make life simple",
-    icon: "/src/assets/icons/arLog.png",
+    icon: UiIcon,
     bgColor: "bg-[#FFE7FB]",
   },
 ];
 
 const projects = [
   {
-    image: "/src/assets/project/p1.png",
+    image: Project1,
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/src/assets/project/p2.png",
+    image: Project2,
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/src/assets/project/p3.png",
+    image: Project3,
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/src/assets/project/p1.png",
+    image: Project4,
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/src/assets/project/p2.png",
+    image: Project5,
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -101,7 +110,7 @@ const ServicePage = () => {
           className="flex flex-col items-center justify-center gap-4"
         >
           <img
-            src="/src/assets/icons/speaker.png"
+            src={ServiceImg}
             alt="Services"
             className="bg-white p-2 rounded-full mt-20"
           />
