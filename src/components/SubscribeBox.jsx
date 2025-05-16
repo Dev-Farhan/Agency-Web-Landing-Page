@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "motion/react";
-
+import Img1 from "../assets/star.png";
+import Img2 from "../assets/cc.png";
 const SubscribeBox = () => {
   return (
     <div className="relative bg-[#E8F4FA] dark:bg-primary-dark flex flex-col items-center py-20 px-2 dark:border-t dark:border-gray-600">
@@ -31,12 +32,12 @@ const SubscribeBox = () => {
         </button>
       </motion.div>
       <img
-        src="/src/assets/star.png"
+        src={Img1}
         alt="star"
         className="h-20 w-auto absolute -top-10 left-0"
       />
       <img
-        src="/src/assets/cc.png"
+        src={Img2}
         alt="star"
         className="h-16 w-auto absolute bottom-1 right-10 lg:top-24 lg:right-24"
       />

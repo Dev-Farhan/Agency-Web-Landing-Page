@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import Img1 from "../assets/service/topLine.png";
+import Img2 from "../assets/service/topRight.png";
+import Img3 from "../assets/service/bell.png";
 // Utility function to format numbers
 const formatNumber = (num) => {
   if (num >= 1000000) {
@@ -22,17 +24,17 @@ const StatsSection = () => {
     <div className="bg-primary text-white py-10 px-4 relative overflow-hidden lg:px-10 lg:py-28">
       {/* Decorative Elements */}
       <img
-        src="/src/assets/service/topLine.png"
+        src={Img1}
         alt="decoration"
         className="absolute top-0 left-0 w-16 h-16"
       />
       <img
-        src="/src/assets/service/topRight.png"
+        src={Img2}
         alt="decoration"
         className="absolute bottom-0 left-0 w-16 h-16"
       />
       <img
-        src="/src/assets/service/bell.png"
+        src={Img3}
         alt="decoration"
         className="absolute top-0 right-0 w-16 h-16"
       />

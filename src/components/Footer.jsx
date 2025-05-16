@@ -6,6 +6,7 @@ import {
 } from "react-icons/fa";
 import { motion } from "motion/react";
 import { Link } from "react-router";
+import Logo from "../assets/logo3.png";
 
 export default function Footer() {
   return (
@@ -22,7 +23,7 @@ export default function Footer() {
             {/* <h2 className="text-lg font-bold text-blue-600">LOGO</h2> */}
             <a href="/" className="md:text-xl">
               <img
-                src="/src/assets/logo3.png"
+                src={Logo}
                 alt="logo"
                 className="w-32 h-18 filter brightness-125"
               />
