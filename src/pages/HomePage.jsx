@@ -8,33 +8,41 @@ import { RiNextjsLine, RiReactjsLine } from "react-icons/ri";
 import { DiNodejs } from "react-icons/di";
 import { SiMongodb, SiMysql, SiExpress } from "react-icons/si";
 import { FaWordpress } from "react-icons/fa6";
+import WebIcon from "../assets/icons/web-application.png";
+import SeoIcon from "../assets/icons/seo.png";
+import UiIcon from "../assets/icons/web-design.png";
+import MobIcon from "../assets/icons/mobile-app.png";
+import HeroImg from "../assets/heroImage.png";
+import BottomImg from "../assets/bottomImage.png";
+import SideImg from "../assets/sideImage.png";
+
 const services = [
   {
     id: 1,
     title: "Web Application",
     description: "Responsive, modern websites.",
-    icon: "/icons/web-application.png",
+    icon: WebIcon,
     bgColor: "bg-purple-100",
   },
   {
     id: 2,
     title: "SEO",
     description: "Boost online visibility.",
-    icon: "/icons/seo.png",
+    icon: SeoIcon,
     bgColor: "bg-green-100",
   },
   {
     id: 3,
     title: "UI/UX Design",
     description: "Beautiful, intuitive designs.",
-    icon: "/icons/web-design.png",
+    icon: UiIcon,
     bgColor: "bg-blue-100",
   },
   {
     id: 4,
     title: "Mobile Applications",
     description: "Powerful mobile apps.",
-    icon: "/icons/mobile-app.png",
+    icon: MobIcon,
     bgColor: "bg-orange-100",
   },
 ];
@@ -146,7 +154,7 @@ const HomePage = () => {
       {/* bg-[#1090cb46] */}
       <div className="container mx-auto dark:bg-[#1E1E1E]">
         <img
-          src="/src/assets/sideImage.png"
+          src={SideImg}
           className="absolute right-0 bottom-10 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[60vh] lg:w-[60px]"
         />
         {/* hero section  */}
@@ -198,11 +206,11 @@ const HomePage = () => {
               <div className="w-64 h-64 bg-[#e7e19f] dark:bg-white z-10 blur-3xl rounded-full"></div>
             </div>
             <div className="max-w-auto md:max-w-lg z-20">
-              <img src="/src/assets/heroImage.png" alt="Hero Image" />
+              <img src={HeroImg} alt="Hero Image" />
             </div>
           </motion.div>
           <img
-            src="/src/assets/bottomImage.png"
+            src={BottomImg}
             className="absolute left-0 bottom-0 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[70vh] lg:w-[60px] lg:-bottom-56"
           />
         </div>
