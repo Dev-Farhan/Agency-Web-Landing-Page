@@ -10,8 +10,7 @@ const SubscribeBox = () => {
         transition={{ duration: 1 }}
         className="text-center mb-10 text-xl font-semibold lg:text-3xl lg:w-1/3 dark:text-primary-light"
       >
-        Let’s build the future—
-        reach out to us today.
+        Let’s build the future— reach out to us today.
       </motion.p>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
@@ -32,12 +31,12 @@ const SubscribeBox = () => {
         </button>
       </motion.div>
       <img
-        src="/star.png"
+        src="/src/assets/star.png"
         alt="star"
         className="h-20 w-auto absolute -top-10 left-0"
       />
       <img
-        src="/cc.png"
+        src="/src/assets/cc.png"
         alt="star"
         className="h-16 w-auto absolute bottom-1 right-10 lg:top-24 lg:right-24"
       />

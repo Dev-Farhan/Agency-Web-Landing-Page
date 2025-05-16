@@ -10,7 +10,7 @@ const services = [
     id: 1,
     title: "Mobile Applications",
     description: "The simplest but robust technology to accompany with you",
-    icon: "/icons/mobLog.png",
+    icon: "/src/assets/icons/mobLog.png",
     bgColor: "bg-[#F1E8FF]",
   },
   {
@@ -18,52 +18,52 @@ const services = [
     title: "Web Applications",
     description:
       "Platform independant business solutions for maximum availability",
-    icon: "/icons/webLog.png",
+    icon: "/src/assets/icons/webLog.png",
     bgColor: "bg-[#FFF2F2]",
   },
   {
     id: 3,
     title: "SEO",
     description: "Let the world find you on top of others Lorem, ipsum dolor.",
-    icon: "/icons/seoLog.png",
+    icon: "/src/assets/icons/seoLog.png",
     bgColor: "bg-[#E2F3FF]",
   },
   {
     id: 4,
     title: "AR/VR Solutions",
     description: "Advanced autonomous technologies to make life simple",
-    icon: "/icons/arLog.png",
+    icon: "/src/assets/icons/arLog.png",
     bgColor: "bg-[#FFE7FB]",
   },
 ];
 
 const projects = [
   {
-    image: "/project/p1.png",
+    image: "/src/assets/project/p1.png",
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/project/p2.png",
+    image: "/src/assets/project/p2.png",
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/project/p3.png",
+    image: "/src/assets/project/p3.png",
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/project/p1.png",
+    image: "/src/assets/project/p1.png",
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
   },
   {
-    image: "/project/p2.png",
+    image: "/src/assets/project/p2.png",
     title: "Lorem Ipsum is simply dummy text of the printing.",
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -101,7 +101,7 @@ const ServicePage = () => {
           className="flex flex-col items-center justify-center gap-4"
         >
           <img
-            src="/icons/speaker.png"
+            src="/src/assets/icons/speaker.png"
             alt="Services"
             className="bg-white p-2 rounded-full mt-20"
           />
@@ -181,7 +181,7 @@ const ServicePage = () => {
           className="md:w-1/2 "
         >
           <img
-            src="/servicePage.png"
+            src="/src/assets/servicePage.png"
             alt="Service"
             className="max-w-sm md:max-w-lg lg:max-w-3xl"
           />

@@ -43,28 +43,28 @@ const testimonials = [
     name: "John Kabras",
     description:
       "“Working with this team has been a game-changer for us. Their dedication and innovation helped us scale our business exponentially. As CEO, I can confidently say they are the best in the industry.”",
-    image: "/members/ceo.png",
+    image: "/src/assets/members/ceo.png",
     rating: 4.5,
   },
   {
     name: "Philips Shene Moris",
     description:
       "“The level of professionalism and expertise shown by the team has been unmatched. They’ve consistently delivered beyond expectations. I’m proud to work with such a talented group of people.”",
-    image: "/members/coo.png",
+    image: "/src/assets/members/coo.png",
     rating: 4,
   },
   {
     name: "Equarn Shamir Mohomad",
     description:
       "“As a Tech Lead, it's rare to come across a team that is as forward-thinking and dedicated as this one. They always prioritize cutting-edge solutions while maintaining quality and efficiency. Simply outstanding!”",
-    image: "/members/lead.png",
+    image: "/src/assets/members/lead.png",
     rating: 5,
   },
   {
     name: "Janka Indrajith",
     description:
       "“The UX team has played a pivotal role in enhancing our user experience. Their design expertise and user-centered approach have significantly improved the overall engagement and satisfaction of our users.”",
-    image: "/members/coo.png",
+    image: "/src/assets/members/coo.png",
     rating: 4.5,
   },
 ];
@@ -146,7 +146,7 @@ const HomePage = () => {
       {/* bg-[#1090cb46] */}
       <div className="container mx-auto dark:bg-[#1E1E1E]">
         <img
-          src="/sideImage.png"
+          src="/src/assets/sideImage.png"
           className="absolute right-0 bottom-10 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[60vh] lg:w-[60px]"
         />
         {/* hero section  */}
@@ -198,11 +198,11 @@ const HomePage = () => {
               <div className="w-64 h-64 bg-[#e7e19f] dark:bg-white z-10 blur-3xl rounded-full"></div>
             </div>
             <div className="max-w-auto md:max-w-lg z-20">
-              <img src="/heroImage.png" alt="Hero Image" />
+              <img src="/src/assets/heroImage.png" alt="Hero Image" />
             </div>
           </motion.div>
           <img
-            src="/bottomImage.png"
+            src="/src/assets/bottomImage.png"
             className="absolute left-0 bottom-0 h-[40vh] w-[40px] md:h-[50vh] md:w-[50px] lg:h-[70vh] lg:w-[60px] lg:-bottom-56"
           />
         </div>

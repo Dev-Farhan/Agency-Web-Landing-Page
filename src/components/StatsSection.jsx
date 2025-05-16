@@ -22,17 +22,17 @@ const StatsSection = () => {
     <div className="bg-primary text-white py-10 px-4 relative overflow-hidden lg:px-10 lg:py-28">
       {/* Decorative Elements */}
       <img
-        src="/service/topLine.png"
+        src="/src/assets/service/topLine.png"
         alt="decoration"
         className="absolute top-0 left-0 w-16 h-16"
       />
       <img
-        src="/service/topRight.png"
+        src="/src/assets/service/topRight.png"
         alt="decoration"
         className="absolute bottom-0 left-0 w-16 h-16"
       />
       <img
-        src="/service/bell.png"
+        src="/src/assets/service/bell.png"
         alt="decoration"
         className="absolute top-0 right-0 w-16 h-16"
       />

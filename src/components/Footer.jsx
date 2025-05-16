@@ -22,7 +22,7 @@ export default function Footer() {
             {/* <h2 className="text-lg font-bold text-blue-600">LOGO</h2> */}
             <a href="/" className="md:text-xl">
               <img
-                src="/logo3.png"
+                src="/src/assets/logo3.png"
                 alt="logo"
                 className="w-32 h-18 filter brightness-125"
               />

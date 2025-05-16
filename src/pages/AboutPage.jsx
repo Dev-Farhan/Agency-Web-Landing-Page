@@ -7,22 +7,22 @@ const AboutPage = () => {
     {
       name: "John Kabras",
       description: "CEO",
-      image: "/members/ceo.png",
+      image: "/src/assets/members/ceo.png",
     },
     {
       name: "Philips Shene Moris",
       description: "COO",
-      image: "/members/coo.png",
+      image: "/src/assets/members/coo.png",
     },
     {
       name: "Equarn Shamir Mohomad",
       description: "Tech Lead",
-      image: "/members/lead.png",
+      image: "/src/assets/members/lead.png",
     },
     {
       name: "Janka Indrajith",
       description: "Head of UX",
-      image: "/members/coo.png",
+      image: "/src/assets/members/coo.png",
     },
   ];
   return (
@@ -31,12 +31,12 @@ const AboutPage = () => {
       <div className="relative">
         <div className="relative flex flex-col-reverse mt-10 px-3 md:flex-row lg:px-20 lg:items-center lg:justify-center lg:gap-20 lg:py-14">
           <img
-            src="/aboutSide.png"
+            src="/src/assets/aboutSide.png"
             alt="P"
             className="hidden md:block absolute bottom-20 right-0 h-60 w-auto"
           />
           <img
-            src="/aboutLeft.png"
+            src="/src/assets/aboutLeft.png"
             alt="P"
             className="hidden md:block absolute -bottom-80 left-0 h-60 w-auto"
           />
@@ -47,12 +47,12 @@ const AboutPage = () => {
             className="flex items-end gap-5"
           >
             <img
-              src="/about/about1.png"
+              src="/src/assets/about/about1.png"
               alt="About"
               className="h-40 md:max-h-32 lg:max-h-56 w-auto"
             />
             <img
-              src="/about/about2.png"
+              src="/src/assets/about/about2.png"
               alt="About"
               className="h-64 md:max-h-44 lg:max-h-96 w-auto "
               loading="lazy"
@@ -85,12 +85,12 @@ const AboutPage = () => {
           className="flex flex-col md:flex-row md:justify-center gap-5 md:gap-8 py-4 px-4"
         >
           <img
-            src="/about/about3.png"
+            src="/src/assets/about/about3.png"
             alt="About"
             className="w-full md:w-1/4 object-cover"
           />
           <img
-            src="/about/about4.png"
+            src="/src/assets/about/about4.png"
             alt="About"
             className="w-full md:w-1/4 object-cover"
           />
@@ -163,7 +163,7 @@ const AboutPage = () => {
           {/* <!-- Card 1 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/icons/webLog.png"
+              src="/src/assets/icons/webLog.png"
               alt="web"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -175,7 +175,7 @@ const AboutPage = () => {
           {/* <!-- Card 2 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/icons/seoLog.png"
+              src="/src/assets/icons/seoLog.png"
               alt="seo"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -185,7 +185,7 @@ const AboutPage = () => {
           {/* <!-- Card 3 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/icons/mobLog.png"
+              src="/src/assets/icons/mobLog.png"
               alt="mobile"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />
@@ -197,7 +197,7 @@ const AboutPage = () => {
           {/* <!-- Card 4 --> */}
           <article className=" flex items-center gap-3">
             <img
-              src="/icons/arLog.png"
+              src="/src/assets/icons/arLog.png"
               alt="arvr"
               className="bg-lightRed h-14 w-14 p-2 rounded-md"
             />

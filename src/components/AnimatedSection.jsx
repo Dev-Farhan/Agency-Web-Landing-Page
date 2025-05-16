@@ -1,8 +1,7 @@
 import { motion } from "motion/react";
 import { GoGoal } from "react-icons/go";
-import { FaQuestion  } from "react-icons/fa";
+import { FaQuestion } from "react-icons/fa";
 import { GrServices } from "react-icons/gr";
-
 
 export const sectionsData = [
   {
@@ -12,7 +11,7 @@ export const sectionsData = [
     description: "",
     heading: "Driven by Innovation, Empowered by Excellence.",
     text: "We specialize in crafting solutions that align with your goals. From custom tech services to strategic design, we help businesses like yours overcome obstacles and stay ahead of the curve.",
-    image: "/plan-planning-strategy-bysiness-ideas-concept.jpg",
+    image: "/src/assets/plan-planning-strategy-bysiness-ideas-concept.jpg",
     reverse: false,
   },
   {
@@ -22,7 +21,7 @@ export const sectionsData = [
     description: "",
     heading: "Why Choose Xpert Solution?",
     text: "At Xpert Solution, we turn ideas into powerful digital experiences. With a team of seasoned experts, a passion for innovation, and a commitment to excellence, we deliver tailored IT solutions that help businesses grow and lead. We believe in transparent processes, cutting-edge technologies, and a client-first approach — ensuring your success at every stage.",
-    image: "/question-mark-icon.jpg",
+    image: "/src/assets/question-mark-icon.jpg",
     reverse: true,
   },
   {
@@ -33,7 +32,7 @@ export const sectionsData = [
     heading: "Solutions Designed for the Future.",
     // text: "We offer a wide range of technology services tailored to your business needs: Custom Software Development — Tailored applications built for performance and scalability. Website & App Development — Seamless, user-focused digital experiences. Cloud & Infrastructure Solutions — Secure, scalable, and future-ready cloud strategies UI/UX Design — Beautiful interfaces that connect brands with users. IT Consulting — Expert advice to align your tech with your business goals. .",
     text: "At Xpert Solution, we offer a full spectrum of IT services designed to empower your business. From custom web and mobile app development to UI/UX design and digital consulting, we provide innovative solutions that drive real results. Let us help you transform your vision into reality with technology built for success.",
-    image: "/concept-m.jpg",
+    image: "/src/assets/concept-m.jpg",
     reverse: false,
   },
 ];
@@ -68,8 +67,12 @@ const SectionWithLine = ({
             <span className="text-xl lg:text-2xl">{icon}</span>
           </div>
           <div>
-            <h3 className="text-lg font-medium dark:text-primary-light">{title}</h3>
-            <p className="text-sm text-gray-500 dark:text-primary-gray">{description}</p>
+            <h3 className="text-lg font-medium dark:text-primary-light">
+              {title}
+            </h3>
+            <p className="text-sm text-gray-500 dark:text-primary-gray">
+              {description}
+            </p>
           </div>
         </div>
         <h2 className="lg:max-w-sm text-2xl font-semibold text-gray-800 dark:text-primary-gray mt-4 leading-normal">
@@ -78,7 +81,9 @@ const SectionWithLine = ({
           </span>{" "}
           {heading.split(" ").slice(2).join(" ")}
         </h2>
-        <p className="lg:max-w-sm text-sm text-gray-600 dark:text-gray-500 mt-2">{text}</p>
+        <p className="lg:max-w-sm text-sm text-gray-600 dark:text-gray-500 mt-2">
+          {text}
+        </p>
       </motion.div>
 
       {/* Image */}
@@ -88,7 +93,11 @@ const SectionWithLine = ({
         transition={{ duration: 0.5 }}
         className="w-1/2"
       >
-        <img src={image} alt={title} className="w-74 h-74 object-cover rounded-md" />
+        <img
+          src={image}
+          alt={title}
+          className="w-74 h-74 object-cover rounded-md"
+        />
       </motion.div>
     </div>
   );

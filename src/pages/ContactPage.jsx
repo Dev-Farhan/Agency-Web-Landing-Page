@@ -19,7 +19,7 @@ const ContactPage = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src="/avatar.png"
+            src="/src/assets/avatar.png"
             alt="Avatar"
             className="h-16 w-auto p-2 bg-[#F5F3DA] rounded-full"
           />
@@ -31,7 +31,11 @@ const ContactPage = () => {
           </p>
         </motion.div>
         <div>
-          <img src="/map.png" alt="Map" className="max-w-xs lg:max-w-xl" />
+          <img
+            src="/src/assets/map.png"
+            alt="Map"
+            className="max-w-xs lg:max-w-xl"
+          />
         </div>
       </div>
 

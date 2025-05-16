@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router";
@@ -20,7 +20,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="container flex items-center justify-between md:justify-between lg:justify-between px-6 py-4 md:py-7">
         <a href="/" className="md:text-xl">
           <img
-            src="/logo3.png"
+            src="/src/assets/logo3.png"
             alt="logo"
             className="w-32 h-18 filter brightness-125"
           />
