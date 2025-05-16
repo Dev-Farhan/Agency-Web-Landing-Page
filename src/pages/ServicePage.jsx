@@ -8,7 +8,7 @@ import SeoIcon from "../assets/icons/seo.png";
 import UiIcon from "../assets/icons/web-design.png";
 import MobIcon from "../assets/icons/mobile-app.png";
 import ServiceImg from "../assets/icons/speaker.png";
-import ServiceImg2 from "../assets/icons/servicePage.png";
+import ServiceImg2 from "../assets/servicePage.png";
 import Project1 from "../assets/project/p1.png";
 import Project2 from "../assets/project/p2.png";
 import Project3 from "../assets/project/p3.png";
